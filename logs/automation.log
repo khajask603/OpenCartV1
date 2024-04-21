@@ -1381,3 +1381,75 @@
 04/21/2024 10:27:41 PM: INFO: ---------------End of test driven Testing-----------------------
 04/21/2024 10:27:41 PM: INFO: ---------------End of test driven Testing-----------------------
 04/21/2024 10:27:41 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:42:10 PM: INFO: ****Login Test Started********
+04/21/2024 10:42:10 PM: INFO: ****Login Test Started********
+04/21/2024 10:42:10 PM: INFO: ****Login Test Started********
+04/21/2024 10:42:10 PM: INFO: ****Login Test Started********
+04/21/2024 10:42:10 PM: INFO: ****Launching Browser*********
+04/21/2024 10:42:10 PM: INFO: ****Launching Browser*********
+04/21/2024 10:42:10 PM: INFO: ****Launching Browser*********
+04/21/2024 10:42:10 PM: INFO: ****Launching Browser*********
+04/21/2024 10:42:10 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:10 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:10 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:10 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:13 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:13 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:13 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:13 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:21 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:21 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:21 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:21 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:21 PM: INFO: Launching application
+04/21/2024 10:42:21 PM: INFO: Launching application
+04/21/2024 10:42:21 PM: INFO: Launching application
+04/21/2024 10:42:21 PM: INFO: Launching application
+04/21/2024 10:42:22 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:22 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:22 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:22 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:22 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:22 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:22 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:22 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:33 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:33 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:33 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:33 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:42:33 PM: INFO: Launching application
+04/21/2024 10:42:33 PM: INFO: Launching application
+04/21/2024 10:42:33 PM: INFO: Launching application
+04/21/2024 10:42:33 PM: INFO: Launching application
+04/21/2024 10:42:35 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:35 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:35 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:35 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:42:36 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:36 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:36 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:36 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:42:38 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:38 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:38 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:38 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:42:38 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:38 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:38 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:38 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:42:40 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:40 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:40 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:40 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:42:48 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:42:48 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:42:48 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:42:48 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:43:24 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:43:24 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:43:24 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:43:24 PM: INFO: ---------------End of test driven Testing-----------------------
