@@ -1,0 +1,1 @@
+pytest --browser edge -s -v testCases/test_002_Reg_Login.py   

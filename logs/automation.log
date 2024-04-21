@@ -1,0 +1,1383 @@
+03/25/2024 07:54:22 PM: INFO: ====== WebDriver manager ======
+03/25/2024 07:54:25 PM: INFO: Get LATEST chromedriver version for google-chrome
+03/25/2024 07:54:25 PM: DEBUG: Starting new HTTPS connection (1): googlechromelabs.github.io:443
+03/25/2024 07:54:25 PM: DEBUG: https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 4701
+03/25/2024 07:54:25 PM: INFO: Get LATEST chromedriver version for google-chrome
+03/25/2024 07:54:25 PM: DEBUG: Starting new HTTPS connection (1): googlechromelabs.github.io:443
+03/25/2024 07:54:26 PM: DEBUG: https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 4701
+03/25/2024 07:54:26 PM: INFO: Driver [C:\Users\SHAIK KHAJA MOHIDDIN\.wdm\drivers\chromedriver\win64\123.0.6312.58\chromedriver-win32/chromedriver.exe] found in cache
+03/25/2024 07:54:26 PM: DEBUG: Started executable: `C:\Users\SHAIK KHAJA MOHIDDIN\.wdm\drivers\chromedriver\win64\123.0.6312.58\chromedriver-win32/chromedriver.exe` in a child process with pid: 11092 using 0 to output -3
+03/25/2024 07:54:26 PM: DEBUG: POST http://localhost:52969/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'detach': True, 'extensions': [], 'args': []}}}}
+03/25/2024 07:54:26 PM: DEBUG: Starting new HTTP connection (1): localhost:52969
+03/25/2024 07:54:28 PM: DEBUG: http://localhost:52969 "POST /session HTTP/1.1" 200 0
+03/25/2024 07:54:28 PM: DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"123.0.6312.59","chrome":{"chromedriverVersion":"123.0.6312.58 (6b4b19e9dfbb93aa414dc045bd445287977d8d7a-refs/branch-heads/6312_46@{#3})","userDataDir":"C:\\Users\\SHAIKK~1\\AppData\\Local\\Temp\\scoped_dir11092_1439415541"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52972"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7aa7244985e9ec81cc0096a68fcd5355"}} | headers=HTTPHeaderDict({'Content-Length': '885', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:28 PM: DEBUG: Finished Request
+03/25/2024 07:54:28 PM: INFO: **** test_001_AccountRegistration started *** 
+03/25/2024 07:54:28 PM: INFO: Launching application
+03/25/2024 07:54:28 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/url {'url': 'https://naveenautomationlabs.com/opencart/index.php?route=common/home'}
+03/25/2024 07:54:29 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/url HTTP/1.1" 200 0
+03/25/2024 07:54:29 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:29 PM: DEBUG: Finished Request
+03/25/2024 07:54:29 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/window/maximize {}
+03/25/2024 07:54:29 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/window/maximize HTTP/1.1" 200 0
+03/25/2024 07:54:29 PM: DEBUG: Remote response: status=200 | data={"value":{"height":688,"width":1296,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:29 PM: DEBUG: Finished Request
+03/25/2024 07:54:29 PM: INFO: clicking on MyAccount--> register
+03/25/2024 07:54:29 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'xpath', 'value': "//a[@title='My Account']"}
+03/25/2024 07:54:29 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:29 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.F961B64CF47CE9156DE8C97A095B93DE.e.6"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:29 PM: DEBUG: Finished Request
+03/25/2024 07:54:29 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.F961B64CF47CE9156DE8C97A095B93DE.e.6/click {}
+03/25/2024 07:54:29 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.F961B64CF47CE9156DE8C97A095B93DE.e.6/click HTTP/1.1" 200 0
+03/25/2024 07:54:29 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:29 PM: DEBUG: Finished Request
+03/25/2024 07:54:29 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'link text', 'value': 'Register'}
+03/25/2024 07:54:29 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:29 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.F961B64CF47CE9156DE8C97A095B93DE.e.30"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:29 PM: DEBUG: Finished Request
+03/25/2024 07:54:29 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.F961B64CF47CE9156DE8C97A095B93DE.e.30/click {}
+03/25/2024 07:54:29 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.F961B64CF47CE9156DE8C97A095B93DE.e.30/click HTTP/1.1" 200 0
+03/25/2024 07:54:29 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:29 PM: DEBUG: Finished Request
+03/25/2024 07:54:29 PM: INFO: -----Providing Costumer details for Registeration-----
+03/25/2024 07:54:29 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'css selector', 'value': '[id="input-firstname"]'}
+03/25/2024 07:54:29 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:29 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:29 PM: DEBUG: Finished Request
+03/25/2024 07:54:29 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.33/value {'text': 'John', 'value': ['J', 'o', 'h', 'n']}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.33/value HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'css selector', 'value': '#input-lastname'}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.34"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.34/value {'text': 'wick', 'value': ['w', 'i', 'c', 'k']}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.34/value HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'xpath', 'value': "//input[@id='input-email']"}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.35"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.35/value {'text': '9a3qi@gmail.com', 'value': ['9', 'a', '3', 'q', 'i', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.35/value HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'xpath', 'value': "//input[@id='input-telephone']"}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.36"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.36/value {'text': '+8721190248', 'value': ['+', '8', '7', '2', '1', '1', '9', '0', '2', '4', '8']}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.36/value HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'css selector', 'value': '[id="input-password"]'}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.37"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.37/value {'text': 'White@456', 'value': ['W', 'h', 'i', 't', 'e', '@', '4', '5', '6']}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.37/value HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'css selector', 'value': '[id="input-confirm"]'}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.38"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.38/value {'text': 'White@456', 'value': ['W', 'h', 'i', 't', 'e', '@', '4', '5', '6']}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.38/value HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'xpath', 'value': "(//label/input[@type='radio'])[2]"}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.39"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.39/click {}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.39/click HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'xpath', 'value': "//input[@name='agree']"}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.42"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.42/click {}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.42/click HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'xpath', 'value': "//input[@value='Continue']"}
+03/25/2024 07:54:30 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:30 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.53"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:30 PM: DEBUG: Finished Request
+03/25/2024 07:54:30 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.53/click {}
+03/25/2024 07:54:31 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.30052B64A28FE93DDD51D020D505824D.e.53/click HTTP/1.1" 200 0
+03/25/2024 07:54:31 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:31 PM: DEBUG: Finished Request
+03/25/2024 07:54:31 PM: DEBUG: POST http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element {'using': 'xpath', 'value': '//div/h1'}
+03/25/2024 07:54:31 PM: DEBUG: http://localhost:52969 "POST /session/7aa7244985e9ec81cc0096a68fcd5355/element HTTP/1.1" 200 0
+03/25/2024 07:54:31 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CD82979940C1DCCBF2B0FA86EB6E881F.d.53702202A0FD13743E6DF83629F96132.e.74"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:31 PM: DEBUG: Finished Request
+03/25/2024 07:54:31 PM: DEBUG: GET http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.53702202A0FD13743E6DF83629F96132.e.74/text {}
+03/25/2024 07:54:31 PM: DEBUG: http://localhost:52969 "GET /session/7aa7244985e9ec81cc0096a68fcd5355/element/f.CD82979940C1DCCBF2B0FA86EB6E881F.d.53702202A0FD13743E6DF83629F96132.e.74/text HTTP/1.1" 200 0
+03/25/2024 07:54:31 PM: DEBUG: Remote response: status=200 | data={"value":"Your Account Has Been Created!"} | headers=HTTPHeaderDict({'Content-Length': '42', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:31 PM: DEBUG: Finished Request
+03/25/2024 07:54:31 PM: DEBUG: DELETE http://localhost:52969/session/7aa7244985e9ec81cc0096a68fcd5355/window {}
+03/25/2024 07:54:31 PM: DEBUG: http://localhost:52969 "DELETE /session/7aa7244985e9ec81cc0096a68fcd5355/window HTTP/1.1" 200 0
+03/25/2024 07:54:31 PM: DEBUG: Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 07:54:31 PM: DEBUG: Finished Request
+03/25/2024 07:54:31 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/25/2024 07:59:59 PM: DEBUG: Started executable: `C:\Users\SHAIK KHAJA MOHIDDIN\.wdm\drivers\chromedriver\win64\123.0.6312.58\chromedriver-win32/chromedriver.exe` in a child process with pid: 20152 using 0 to output -3
+03/25/2024 07:59:59 PM: DEBUG: POST http://localhost:53124/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'detach': True, 'extensions': [], 'args': []}}}}
+03/25/2024 08:00:01 PM: DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"123.0.6312.59","chrome":{"chromedriverVersion":"123.0.6312.58 (6b4b19e9dfbb93aa414dc045bd445287977d8d7a-refs/branch-heads/6312_46@{#3})","userDataDir":"C:\\Users\\SHAIKK~1\\AppData\\Local\\Temp\\scoped_dir20152_1995584143"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:53137"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8888520cfdbe69df864966d6948df360"}} | headers=HTTPHeaderDict({'Content-Length': '885', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:01 PM: DEBUG: Finished Request
+03/25/2024 08:00:01 PM: INFO: **** test_001_AccountRegistration started *** 
+03/25/2024 08:00:01 PM: INFO: Launching application
+03/25/2024 08:00:01 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/url {'url': 'https://naveenautomationlabs.com/opencart/index.php?route=common/home'}
+03/25/2024 08:00:02 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:02 PM: DEBUG: Finished Request
+03/25/2024 08:00:02 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/window/maximize {}
+03/25/2024 08:00:02 PM: DEBUG: Remote response: status=200 | data={"value":{"height":688,"width":1296,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:02 PM: DEBUG: Finished Request
+03/25/2024 08:00:02 PM: INFO: clicking on MyAccount--> register
+03/25/2024 08:00:02 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'xpath', 'value': "//a[@title='My Account']"}
+03/25/2024 08:00:02 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.7E97834ECBE5EF87C995DAF4CC1B8F5F.e.6"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:02 PM: DEBUG: Finished Request
+03/25/2024 08:00:02 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.7E97834ECBE5EF87C995DAF4CC1B8F5F.e.6/click {}
+03/25/2024 08:00:02 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:02 PM: DEBUG: Finished Request
+03/25/2024 08:00:02 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'link text', 'value': 'Register'}
+03/25/2024 08:00:02 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.7E97834ECBE5EF87C995DAF4CC1B8F5F.e.30"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:02 PM: DEBUG: Finished Request
+03/25/2024 08:00:02 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.7E97834ECBE5EF87C995DAF4CC1B8F5F.e.30/click {}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: INFO: -----Providing Costumer details for Registeration-----
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'css selector', 'value': '[id="input-firstname"]'}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.33/value {'text': 'John', 'value': ['J', 'o', 'h', 'n']}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'css selector', 'value': '#input-lastname'}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.34"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.34/value {'text': 'wick', 'value': ['w', 'i', 'c', 'k']}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'xpath', 'value': "//input[@id='input-email']"}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.35"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.35/value {'text': 'nbcao@gmail.com', 'value': ['n', 'b', 'c', 'a', 'o', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'xpath', 'value': "//input[@id='input-telephone']"}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.36"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.36/value {'text': '+8721190248', 'value': ['+', '8', '7', '2', '1', '1', '9', '0', '2', '4', '8']}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'css selector', 'value': '[id="input-password"]'}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.37"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.37/value {'text': 'White@456', 'value': ['W', 'h', 'i', 't', 'e', '@', '4', '5', '6']}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'css selector', 'value': '[id="input-confirm"]'}
+03/25/2024 08:00:03 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.38"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:03 PM: DEBUG: Finished Request
+03/25/2024 08:00:03 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.38/value {'text': 'White@456', 'value': ['W', 'h', 'i', 't', 'e', '@', '4', '5', '6']}
+03/25/2024 08:00:04 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:04 PM: DEBUG: Finished Request
+03/25/2024 08:00:04 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'xpath', 'value': "(//label/input[@type='radio'])[2]"}
+03/25/2024 08:00:04 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.39"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:04 PM: DEBUG: Finished Request
+03/25/2024 08:00:04 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.39/click {}
+03/25/2024 08:00:04 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:04 PM: DEBUG: Finished Request
+03/25/2024 08:00:04 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'xpath', 'value': "//input[@name='agree']"}
+03/25/2024 08:00:04 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.42"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:04 PM: DEBUG: Finished Request
+03/25/2024 08:00:04 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.42/click {}
+03/25/2024 08:00:04 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:04 PM: DEBUG: Finished Request
+03/25/2024 08:00:04 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'xpath', 'value': "//input[@value='Continue']"}
+03/25/2024 08:00:04 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.53"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:04 PM: DEBUG: Finished Request
+03/25/2024 08:00:04 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.9DCE01CA3384FD665133C3BD9E38F0C0.e.53/click {}
+03/25/2024 08:00:05 PM: DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:05 PM: DEBUG: Finished Request
+03/25/2024 08:00:05 PM: DEBUG: POST http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element {'using': 'xpath', 'value': '//div/h1'}
+03/25/2024 08:00:05 PM: DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.40C8FBCB7F6B2FB5642390D7B4761E41.d.4CB74FC0ECA4F81195AE85B5A0BF8D1F.e.74"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:05 PM: DEBUG: Finished Request
+03/25/2024 08:00:05 PM: DEBUG: GET http://localhost:53124/session/8888520cfdbe69df864966d6948df360/element/f.40C8FBCB7F6B2FB5642390D7B4761E41.d.4CB74FC0ECA4F81195AE85B5A0BF8D1F.e.74/text {}
+03/25/2024 08:00:05 PM: DEBUG: Remote response: status=200 | data={"value":"Your Account Has Been Created!"} | headers=HTTPHeaderDict({'Content-Length': '42', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:05 PM: DEBUG: Finished Request
+03/25/2024 08:00:05 PM: DEBUG: DELETE http://localhost:53124/session/8888520cfdbe69df864966d6948df360/window {}
+03/25/2024 08:00:05 PM: DEBUG: Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+03/25/2024 08:00:05 PM: DEBUG: Finished Request
+03/25/2024 08:00:05 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/26/2024 03:09:50 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:09:51 PM: INFO: Launching application
+03/26/2024 03:09:52 PM: INFO: clicking on MyAccount--> register
+03/26/2024 03:09:52 PM: INFO: -----Providing Costumer details for Registeration-----
+03/26/2024 03:09:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/26/2024 03:39:09 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:39:09 PM: INFO: Launching application
+03/26/2024 03:39:47 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:39:47 PM: INFO: Launching application
+03/26/2024 03:43:11 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:43:11 PM: INFO: Launching application
+03/26/2024 03:46:34 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:46:34 PM: INFO: Launching application
+03/26/2024 03:47:08 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:47:08 PM: INFO: Launching application
+03/26/2024 03:47:34 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:47:34 PM: INFO: Launching application
+03/26/2024 03:52:24 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:52:24 PM: INFO: Launching application
+03/26/2024 03:52:43 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:52:43 PM: INFO: Launching application
+03/26/2024 03:56:26 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:56:26 PM: INFO: Launching application
+03/26/2024 03:56:47 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:56:47 PM: INFO: Launching application
+03/26/2024 03:57:25 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:57:25 PM: INFO: Launching application
+03/26/2024 03:57:53 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:57:53 PM: INFO: Launching application
+03/26/2024 03:59:17 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 03:59:17 PM: INFO: Launching application
+03/26/2024 04:03:42 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 04:03:42 PM: INFO: Launching application
+03/26/2024 04:03:43 PM: INFO: clicking on MyAccount--> register
+03/26/2024 04:03:44 PM: INFO: -----Providing Costumer details for Registeration-----
+03/26/2024 04:03:45 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/26/2024 04:04:13 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 04:04:13 PM: INFO: Launching application
+03/26/2024 04:04:15 PM: INFO: clicking on MyAccount--> register
+03/26/2024 04:04:15 PM: INFO: -----Providing Costumer details for Registeration-----
+03/26/2024 04:04:20 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/26/2024 07:34:59 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 07:34:59 PM: INFO: Launching application
+03/26/2024 07:35:00 PM: INFO: clicking on MyAccount--> register
+03/26/2024 07:35:01 PM: INFO: -----Providing Costumer details for Registeration-----
+03/26/2024 07:35:02 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/26/2024 07:39:57 PM: INFO: **** test_001_AccountRegistration started *** 
+03/26/2024 07:39:57 PM: INFO: Launching application
+03/26/2024 07:39:58 PM: INFO: clicking on MyAccount--> register
+03/26/2024 07:39:59 PM: INFO: -----Providing Costumer details for Registeration-----
+03/26/2024 07:40:00 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:30:09 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:30:09 PM: INFO: Launching application
+03/27/2024 02:30:10 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:30:10 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:30:12 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:32:58 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:32:58 PM: INFO: Launching application
+03/27/2024 02:32:59 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:33:00 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:33:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:36:56 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:36:56 PM: INFO: Launching application
+03/27/2024 02:36:57 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:36:57 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:36:59 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:40:28 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:40:28 PM: INFO: Launching application
+03/27/2024 02:40:29 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:40:30 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:40:31 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:41:29 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:41:29 PM: INFO: Launching application
+03/27/2024 02:41:30 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:41:30 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:41:32 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:44:17 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:44:17 PM: INFO: Launching application
+03/27/2024 02:44:18 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:44:19 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:44:21 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:48:48 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:48:48 PM: INFO: Launching application
+03/27/2024 02:48:49 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:48:50 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:48:52 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 02:57:41 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 02:57:41 PM: INFO: Launching application
+03/27/2024 02:57:42 PM: INFO: clicking on MyAccount--> register
+03/27/2024 02:57:43 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 02:57:46 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 03:03:49 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 03:03:49 PM: INFO: Launching application
+03/27/2024 03:03:50 PM: INFO: clicking on MyAccount--> register
+03/27/2024 03:03:51 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 03:03:52 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 03:04:34 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 03:04:34 PM: INFO: Launching application
+03/27/2024 03:05:01 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 03:05:01 PM: INFO: Launching application
+03/27/2024 03:05:02 PM: INFO: clicking on MyAccount--> register
+03/27/2024 03:05:03 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 03:05:05 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 03:24:02 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 03:24:02 PM: INFO: Launching application
+03/27/2024 03:24:03 PM: INFO: clicking on MyAccount--> register
+03/27/2024 03:24:04 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 03:24:06 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:55:40 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:55:40 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:55:40 PM: INFO: Launching application
+03/27/2024 10:55:40 PM: INFO: Launching application
+03/27/2024 10:55:42 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:55:42 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:55:43 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:55:43 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:55:44 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:55:44 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:55:50 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:55:50 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:55:50 PM: INFO: Launching application
+03/27/2024 10:55:50 PM: INFO: Launching application
+03/27/2024 10:55:51 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:55:51 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:55:52 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:55:52 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:55:53 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:55:53 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:56:22 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:56:22 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:56:22 PM: INFO: Launching application
+03/27/2024 10:56:22 PM: INFO: Launching application
+03/27/2024 10:56:24 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:56:24 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:56:24 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:56:24 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:56:26 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:56:26 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:56:31 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:56:31 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 10:56:31 PM: INFO: Launching application
+03/27/2024 10:56:31 PM: INFO: Launching application
+03/27/2024 10:56:33 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:56:33 PM: INFO: clicking on MyAccount--> register
+03/27/2024 10:56:33 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:56:33 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 10:56:35 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:56:35 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 10:56:41 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 10:56:41 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:03:35 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:03:35 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:03:35 PM: INFO: Launching application
+03/27/2024 11:03:35 PM: INFO: Launching application
+03/27/2024 11:03:36 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:03:36 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:03:36 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:03:36 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:03:38 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:03:38 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:03:44 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:03:44 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:03:44 PM: INFO: Launching application
+03/27/2024 11:03:44 PM: INFO: Launching application
+03/27/2024 11:03:45 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:03:45 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:03:45 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:03:45 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:03:47 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:03:47 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:03:52 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:03:52 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:11:01 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:11:01 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:11:01 PM: INFO: Launching application
+03/27/2024 11:11:01 PM: INFO: Launching application
+03/27/2024 11:11:02 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:11:02 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:11:03 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:11:03 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:11:05 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:11:05 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:11:10 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:11:10 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:11:10 PM: INFO: Launching application
+03/27/2024 11:11:10 PM: INFO: Launching application
+03/27/2024 11:11:11 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:11:11 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:11:12 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:11:12 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:11:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:11:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:11:19 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:11:19 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:11:21 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:11:21 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:11:21 PM: INFO: Launching application
+03/27/2024 11:11:21 PM: INFO: Launching application
+03/27/2024 11:11:21 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:11:21 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:11:22 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:11:22 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:11:25 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:11:25 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:26:37 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:26:37 PM: INFO: Launching application
+03/27/2024 11:26:40 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:26:40 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:26:41 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:26:47 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:26:47 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:26:47 PM: INFO: Launching application
+03/27/2024 11:26:50 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:26:50 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:26:52 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:31:27 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:34:26 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:34:26 PM: INFO: Launching application
+03/27/2024 11:34:27 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:34:28 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:34:29 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:34:34 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:34:34 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:34:34 PM: INFO: Launching application
+03/27/2024 11:34:36 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:34:36 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:34:38 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:34:51 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:34:51 PM: INFO: Launching application
+03/27/2024 11:34:53 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:34:53 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:34:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:35:00 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:35:00 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:35:00 PM: INFO: Launching application
+03/27/2024 11:35:01 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:35:02 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:35:04 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:37:41 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:37:41 PM: INFO: Launching application
+03/27/2024 11:37:42 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:37:42 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:37:44 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:37:49 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:37:49 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:37:49 PM: INFO: Launching application
+03/27/2024 11:37:51 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:37:52 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:37:54 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:40:41 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:40:41 PM: INFO: Launching application
+03/27/2024 11:40:42 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:40:43 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:40:44 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:40:49 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:42:05 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:42:05 PM: INFO: Launching application
+03/27/2024 11:42:06 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:42:07 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:42:08 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:42:08 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:44:10 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:44:10 PM: INFO: Launching application
+03/27/2024 11:44:12 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:44:12 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:44:14 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:44:14 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:44:41 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:44:41 PM: INFO: Launching application
+03/27/2024 11:44:43 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:44:44 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:44:48 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:44:48 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:57:52 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:57:52 PM: INFO: Launching application
+03/27/2024 11:57:54 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:57:54 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:57:56 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:57:56 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:57:57 PM: INFO: ---------END OF test__002_Login Completed---------
+03/27/2024 11:58:49 PM: INFO: **** test_001_AccountRegistration started *** 
+03/27/2024 11:58:49 PM: INFO: Launching application
+03/27/2024 11:58:50 PM: INFO: clicking on MyAccount--> register
+03/27/2024 11:58:50 PM: INFO: -----Providing Costumer details for Registeration-----
+03/27/2024 11:58:51 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/27/2024 11:58:52 PM: INFO: ---------test__002_Login Strarted---------
+03/27/2024 11:58:53 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:13:09 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 01:13:09 PM: INFO: Launching application
+03/28/2024 01:13:10 PM: INFO: clicking on MyAccount--> register
+03/28/2024 01:13:11 PM: INFO: -----Providing Customer details for Registration-----
+03/28/2024 01:13:12 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 01:39:11 PM: INFO: ****Login Test Started********
+03/28/2024 01:39:11 PM: INFO: ****Launching Browser*********
+03/28/2024 01:39:11 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:39:54 PM: INFO: ****Login Test Started********
+03/28/2024 01:39:54 PM: INFO: ****Launching Browser*********
+03/28/2024 01:39:54 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:42:24 PM: INFO: ****Login Test Started********
+03/28/2024 01:42:24 PM: INFO: ****Launching Browser*********
+03/28/2024 01:42:24 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:42:27 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:48:37 PM: INFO: ****Login Test Started********
+03/28/2024 01:48:37 PM: INFO: ****Login Test Started********
+03/28/2024 01:48:37 PM: INFO: ****Login Test Started********
+03/28/2024 01:48:37 PM: INFO: ****Launching Browser*********
+03/28/2024 01:48:37 PM: INFO: ****Launching Browser*********
+03/28/2024 01:48:37 PM: INFO: ****Launching Browser*********
+03/28/2024 01:48:37 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:48:37 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:48:37 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:48:40 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:48:40 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:48:40 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:48:46 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 01:48:46 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 01:48:46 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 01:48:46 PM: INFO: Launching application
+03/28/2024 01:48:46 PM: INFO: Launching application
+03/28/2024 01:48:46 PM: INFO: Launching application
+03/28/2024 01:48:47 PM: INFO: clicking on MyAccount--> register
+03/28/2024 01:48:47 PM: INFO: clicking on MyAccount--> register
+03/28/2024 01:48:47 PM: INFO: clicking on MyAccount--> register
+03/28/2024 01:48:48 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 01:48:48 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 01:48:48 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 01:48:50 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 01:48:50 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 01:48:50 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 01:48:56 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 01:48:56 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 01:48:56 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 01:48:56 PM: INFO: Launching application
+03/28/2024 01:48:56 PM: INFO: Launching application
+03/28/2024 01:48:56 PM: INFO: Launching application
+03/28/2024 01:48:58 PM: INFO: clicking on MyAccount--> register
+03/28/2024 01:48:58 PM: INFO: clicking on MyAccount--> register
+03/28/2024 01:48:58 PM: INFO: clicking on MyAccount--> register
+03/28/2024 01:48:58 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 01:48:58 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 01:48:58 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 01:49:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 01:49:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 01:49:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 01:49:02 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:49:02 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:49:02 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:49:04 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:49:04 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:49:04 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 01:52:10 PM: INFO: ****Login Test Started********
+03/28/2024 01:52:10 PM: INFO: ****Launching Browser*********
+03/28/2024 01:52:10 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 01:52:13 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:09:07 PM: INFO: ****Login Test Started********
+03/28/2024 02:09:07 PM: INFO: ****Launching Browser*********
+03/28/2024 02:09:07 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:09:10 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:11:36 PM: INFO: ****Login Test Started********
+03/28/2024 02:11:36 PM: INFO: ****Login Test Started********
+03/28/2024 02:11:36 PM: INFO: ****Login Test Started********
+03/28/2024 02:11:36 PM: INFO: ****Launching Browser*********
+03/28/2024 02:11:36 PM: INFO: ****Launching Browser*********
+03/28/2024 02:11:36 PM: INFO: ****Launching Browser*********
+03/28/2024 02:11:36 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:11:36 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:11:36 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:11:38 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:11:38 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:11:38 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:11:43 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:11:43 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:11:43 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:11:43 PM: INFO: Launching application
+03/28/2024 02:11:43 PM: INFO: Launching application
+03/28/2024 02:11:43 PM: INFO: Launching application
+03/28/2024 02:11:44 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:11:44 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:11:44 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:11:45 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:11:45 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:11:45 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:11:47 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:11:47 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:11:47 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:11:52 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:11:52 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:11:52 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:11:52 PM: INFO: Launching application
+03/28/2024 02:11:52 PM: INFO: Launching application
+03/28/2024 02:11:52 PM: INFO: Launching application
+03/28/2024 02:11:53 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:11:53 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:11:53 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:11:53 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:11:53 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:11:53 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:11:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:11:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:11:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:11:55 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:11:55 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:11:55 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:11:57 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:11:57 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:11:57 PM: ERROR: ---------test__002_Login Failed---------
+03/28/2024 02:33:01 PM: INFO: ****Login Test Started********
+03/28/2024 02:33:01 PM: INFO: ****Login Test Started********
+03/28/2024 02:33:01 PM: INFO: ****Login Test Started********
+03/28/2024 02:33:01 PM: INFO: ****Launching Browser*********
+03/28/2024 02:33:01 PM: INFO: ****Launching Browser*********
+03/28/2024 02:33:01 PM: INFO: ****Launching Browser*********
+03/28/2024 02:33:01 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:33:01 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:33:01 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:33:04 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 02:33:04 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 02:33:04 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 02:33:11 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:33:11 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:33:11 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:33:11 PM: INFO: Launching application
+03/28/2024 02:33:11 PM: INFO: Launching application
+03/28/2024 02:33:11 PM: INFO: Launching application
+03/28/2024 02:33:12 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:33:12 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:33:12 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:33:12 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:33:12 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:33:12 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:33:14 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:33:14 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:33:14 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:33:21 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:33:21 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:33:21 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 02:33:21 PM: INFO: Launching application
+03/28/2024 02:33:21 PM: INFO: Launching application
+03/28/2024 02:33:21 PM: INFO: Launching application
+03/28/2024 02:33:22 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:33:22 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:33:22 PM: INFO: clicking on MyAccount--> register
+03/28/2024 02:33:22 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:33:22 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:33:22 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 02:33:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:33:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:33:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 02:33:25 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:33:25 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:33:25 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 02:33:26 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 02:33:26 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 02:33:26 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 03:35:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:36:37 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:37:10 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:39:42 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:40:56 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:43:09 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:45:26 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:46:04 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:48:07 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 03:48:25 PM: INFO: ---------------End of test driven Testing-----------------------
+03/28/2024 04:15:19 PM: INFO: ****Login Test Started********
+03/28/2024 04:15:19 PM: INFO: ****Login Test Started********
+03/28/2024 04:15:19 PM: INFO: ****Login Test Started********
+03/28/2024 04:15:19 PM: INFO: ****Login Test Started********
+03/28/2024 04:15:19 PM: INFO: ****Launching Browser*********
+03/28/2024 04:15:19 PM: INFO: ****Launching Browser*********
+03/28/2024 04:15:19 PM: INFO: ****Launching Browser*********
+03/28/2024 04:15:19 PM: INFO: ****Launching Browser*********
+03/28/2024 04:15:19 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:15:19 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:15:19 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:15:19 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:15:22 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:15:22 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:15:22 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:15:22 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:15:39 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:15:39 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:15:39 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:15:39 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:15:39 PM: INFO: Launching application
+03/28/2024 04:15:39 PM: INFO: Launching application
+03/28/2024 04:15:39 PM: INFO: Launching application
+03/28/2024 04:15:39 PM: INFO: Launching application
+03/28/2024 04:15:40 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:15:40 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:15:40 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:15:40 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:15:41 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:15:41 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:15:41 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:15:41 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:15:43 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 04:15:43 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 04:15:43 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 04:15:43 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 04:17:23 PM: INFO: ****Login Test Started********
+03/28/2024 04:17:23 PM: INFO: ****Login Test Started********
+03/28/2024 04:17:23 PM: INFO: ****Login Test Started********
+03/28/2024 04:17:23 PM: INFO: ****Login Test Started********
+03/28/2024 04:17:23 PM: INFO: ****Launching Browser*********
+03/28/2024 04:17:23 PM: INFO: ****Launching Browser*********
+03/28/2024 04:17:23 PM: INFO: ****Launching Browser*********
+03/28/2024 04:17:23 PM: INFO: ****Launching Browser*********
+03/28/2024 04:17:23 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:17:23 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:17:23 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:17:23 PM: INFO: ---------test__002_Login Strarted---------
+03/28/2024 04:17:44 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:17:44 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:17:44 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:17:44 PM: INFO: ---------END OF test__002_Login Completed---------
+03/28/2024 04:17:51 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:17:51 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:17:51 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:17:51 PM: INFO: **** test_001_AccountRegistration started *** 
+03/28/2024 04:17:51 PM: INFO: Launching application
+03/28/2024 04:17:51 PM: INFO: Launching application
+03/28/2024 04:17:51 PM: INFO: Launching application
+03/28/2024 04:17:51 PM: INFO: Launching application
+03/28/2024 04:18:33 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:18:33 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:18:33 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:18:33 PM: INFO: clicking on MyAccount--> register
+03/28/2024 04:18:34 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:18:34 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:18:34 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:18:34 PM: INFO: -----Providing Costumer details for Registeration-----
+03/28/2024 04:18:35 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 04:18:35 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 04:18:35 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 04:18:35 PM: INFO: **** test_001_AccountRegistration finished *** 
+03/28/2024 08:00:23 PM: INFO: --------------Starting test_Login_DDT_Test----------
+03/28/2024 08:00:47 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 01:09:43 PM: INFO: ****Login Test Started********
+04/21/2024 01:09:43 PM: INFO: ****Login Test Started********
+04/21/2024 01:09:43 PM: INFO: ****Login Test Started********
+04/21/2024 01:09:43 PM: INFO: ****Login Test Started********
+04/21/2024 01:09:43 PM: INFO: ****Launching Browser*********
+04/21/2024 01:09:43 PM: INFO: ****Launching Browser*********
+04/21/2024 01:09:43 PM: INFO: ****Launching Browser*********
+04/21/2024 01:09:43 PM: INFO: ****Launching Browser*********
+04/21/2024 01:09:43 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:09:43 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:09:43 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:09:43 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:09:48 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:09:48 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:09:48 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:09:48 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:09:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:09:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:09:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:09:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:09:56 PM: INFO: Launching application
+04/21/2024 01:09:56 PM: INFO: Launching application
+04/21/2024 01:09:56 PM: INFO: Launching application
+04/21/2024 01:09:56 PM: INFO: Launching application
+04/21/2024 01:09:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:09:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:09:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:09:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:10:00 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:00 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:00 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:00 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:09 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:10:09 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:10:09 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:10:09 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:10:09 PM: INFO: Launching application
+04/21/2024 01:10:09 PM: INFO: Launching application
+04/21/2024 01:10:09 PM: INFO: Launching application
+04/21/2024 01:10:09 PM: INFO: Launching application
+04/21/2024 01:10:14 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:10:14 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:10:14 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:10:14 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:10:15 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:15 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:15 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:15 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:10:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:10:17 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:10:17 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:10:17 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:10:17 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:10:19 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:10:19 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:10:19 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:10:19 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:10:25 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 01:10:25 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 01:10:25 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 01:10:25 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 01:10:52 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 01:10:52 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 01:10:52 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 01:10:52 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 01:12:13 PM: INFO: ****Login Test Started********
+04/21/2024 01:12:13 PM: INFO: ****Login Test Started********
+04/21/2024 01:12:13 PM: INFO: ****Login Test Started********
+04/21/2024 01:12:13 PM: INFO: ****Login Test Started********
+04/21/2024 01:12:13 PM: INFO: ****Launching Browser*********
+04/21/2024 01:12:13 PM: INFO: ****Launching Browser*********
+04/21/2024 01:12:13 PM: INFO: ****Launching Browser*********
+04/21/2024 01:12:13 PM: INFO: ****Launching Browser*********
+04/21/2024 01:12:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:12:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:12:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:12:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:30:27 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 01:31:03 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 01:31:39 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 01:32:18 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:32:18 PM: INFO: Launching application
+04/21/2024 01:32:21 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:32:21 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:32:24 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:32:24 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:32:26 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 01:32:55 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:32:55 PM: INFO: Launching application
+04/21/2024 01:32:58 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:32:58 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:33:00 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:34:31 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 01:34:31 PM: INFO: Launching application
+04/21/2024 01:34:34 PM: INFO: clicking on MyAccount--> register
+04/21/2024 01:34:35 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 01:34:44 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 01:34:46 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 01:34:50 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 02:01:28 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 02:01:28 PM: INFO: Launching application
+04/21/2024 02:01:35 PM: INFO: clicking on MyAccount--> register
+04/21/2024 02:01:37 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 02:01:43 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 02:01:45 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:23:24 PM: INFO: ****Login Test Started********
+04/21/2024 04:23:24 PM: INFO: ****Login Test Started********
+04/21/2024 04:23:24 PM: INFO: ****Login Test Started********
+04/21/2024 04:23:24 PM: INFO: ****Login Test Started********
+04/21/2024 04:23:24 PM: INFO: ****Launching Browser*********
+04/21/2024 04:23:24 PM: INFO: ****Launching Browser*********
+04/21/2024 04:23:24 PM: INFO: ****Launching Browser*********
+04/21/2024 04:23:24 PM: INFO: ****Launching Browser*********
+04/21/2024 04:23:24 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:23:24 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:23:24 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:23:24 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:23:30 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:23:30 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:23:30 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:23:30 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:23:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:36 PM: INFO: Launching application
+04/21/2024 04:23:36 PM: INFO: Launching application
+04/21/2024 04:23:36 PM: INFO: Launching application
+04/21/2024 04:23:36 PM: INFO: Launching application
+04/21/2024 04:23:38 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:23:38 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:23:38 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:23:38 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:23:39 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:23:39 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:23:39 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:23:39 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:23:40 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:23:40 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:23:40 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:23:40 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:23:59 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:59 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:59 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:59 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:23:59 PM: INFO: Launching application
+04/21/2024 04:23:59 PM: INFO: Launching application
+04/21/2024 04:23:59 PM: INFO: Launching application
+04/21/2024 04:23:59 PM: INFO: Launching application
+04/21/2024 04:24:01 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:24:01 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:24:01 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:24:01 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:24:02 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:24:02 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:24:02 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:24:02 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:24:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:24:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:24:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:24:03 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:24:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:24:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:24:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:24:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:29:48 PM: INFO: ****Login Test Started********
+04/21/2024 04:29:48 PM: INFO: ****Login Test Started********
+04/21/2024 04:29:48 PM: INFO: ****Login Test Started********
+04/21/2024 04:29:48 PM: INFO: ****Login Test Started********
+04/21/2024 04:29:48 PM: INFO: ****Launching Browser*********
+04/21/2024 04:29:48 PM: INFO: ****Launching Browser*********
+04/21/2024 04:29:48 PM: INFO: ****Launching Browser*********
+04/21/2024 04:29:48 PM: INFO: ****Launching Browser*********
+04/21/2024 04:29:48 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:29:48 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:29:48 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:29:48 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:29:50 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:29:50 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:29:50 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:29:50 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:29:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:29:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:29:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:29:56 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:29:56 PM: INFO: Launching application
+04/21/2024 04:29:56 PM: INFO: Launching application
+04/21/2024 04:29:56 PM: INFO: Launching application
+04/21/2024 04:29:56 PM: INFO: Launching application
+04/21/2024 04:29:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:29:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:29:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:29:59 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:29:59 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:29:59 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:29:59 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:29:59 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:30:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:01 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:08 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:30:08 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:30:08 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:30:08 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:30:08 PM: INFO: Launching application
+04/21/2024 04:30:08 PM: INFO: Launching application
+04/21/2024 04:30:08 PM: INFO: Launching application
+04/21/2024 04:30:08 PM: INFO: Launching application
+04/21/2024 04:30:10 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:30:10 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:30:10 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:30:10 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:30:11 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:30:11 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:30:11 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:30:11 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:30:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:30:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:30:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:30:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:30:13 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:30:14 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:30:14 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:30:14 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:30:14 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:30:21 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:30:21 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:30:21 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:30:21 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:30:57 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:30:57 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:30:57 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:30:57 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:31:59 PM: INFO: ****Login Test Started********
+04/21/2024 04:31:59 PM: INFO: ****Login Test Started********
+04/21/2024 04:31:59 PM: INFO: ****Login Test Started********
+04/21/2024 04:31:59 PM: INFO: ****Login Test Started********
+04/21/2024 04:31:59 PM: INFO: ****Launching Browser*********
+04/21/2024 04:31:59 PM: INFO: ****Launching Browser*********
+04/21/2024 04:31:59 PM: INFO: ****Launching Browser*********
+04/21/2024 04:31:59 PM: INFO: ****Launching Browser*********
+04/21/2024 04:31:59 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:31:59 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:31:59 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:31:59 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:32:03 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:03 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:03 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:03 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:10 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:10 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:10 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:10 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:10 PM: INFO: Launching application
+04/21/2024 04:32:10 PM: INFO: Launching application
+04/21/2024 04:32:10 PM: INFO: Launching application
+04/21/2024 04:32:10 PM: INFO: Launching application
+04/21/2024 04:32:11 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:11 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:11 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:11 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:12 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:12 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:12 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:12 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:13 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:24 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:24 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:24 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:24 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:32:24 PM: INFO: Launching application
+04/21/2024 04:32:24 PM: INFO: Launching application
+04/21/2024 04:32:24 PM: INFO: Launching application
+04/21/2024 04:32:24 PM: INFO: Launching application
+04/21/2024 04:32:25 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:25 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:25 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:25 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:32:26 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:26 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:26 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:26 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:32:28 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:28 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:28 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:28 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:32:28 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:32:28 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:32:28 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:32:28 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:32:29 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:29 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:29 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:29 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:32:35 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:32:35 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:32:35 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:32:35 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:33:11 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:33:11 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:33:11 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:33:11 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 04:49:01 PM: INFO: ****Login Test Started********
+04/21/2024 04:49:01 PM: INFO: ****Login Test Started********
+04/21/2024 04:49:01 PM: INFO: ****Login Test Started********
+04/21/2024 04:49:01 PM: INFO: ****Login Test Started********
+04/21/2024 04:49:01 PM: INFO: ****Launching Browser*********
+04/21/2024 04:49:01 PM: INFO: ****Launching Browser*********
+04/21/2024 04:49:01 PM: INFO: ****Launching Browser*********
+04/21/2024 04:49:01 PM: INFO: ****Launching Browser*********
+04/21/2024 04:49:01 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:49:01 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:49:01 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:49:01 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 04:49:07 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:49:07 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:49:07 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:49:07 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 04:49:13 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:13 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:13 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:13 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:13 PM: INFO: Launching application
+04/21/2024 04:49:13 PM: INFO: Launching application
+04/21/2024 04:49:13 PM: INFO: Launching application
+04/21/2024 04:49:13 PM: INFO: Launching application
+04/21/2024 04:49:15 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:15 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:15 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:15 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:16 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:16 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:16 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:16 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:17 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:28 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:28 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:28 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:28 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 04:49:28 PM: INFO: Launching application
+04/21/2024 04:49:28 PM: INFO: Launching application
+04/21/2024 04:49:28 PM: INFO: Launching application
+04/21/2024 04:49:28 PM: INFO: Launching application
+04/21/2024 04:49:29 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:29 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:29 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:29 PM: INFO: clicking on MyAccount--> register
+04/21/2024 04:49:29 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:29 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:29 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:29 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 04:49:30 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:30 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:30 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:30 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 04:49:40 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:49:40 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:49:40 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 04:49:40 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:37:23 PM: INFO: ****Login Test Started********
+04/21/2024 07:37:23 PM: INFO: ****Login Test Started********
+04/21/2024 07:37:23 PM: INFO: ****Login Test Started********
+04/21/2024 07:37:23 PM: INFO: ****Login Test Started********
+04/21/2024 07:37:23 PM: INFO: ****Launching Browser*********
+04/21/2024 07:37:23 PM: INFO: ****Launching Browser*********
+04/21/2024 07:37:23 PM: INFO: ****Launching Browser*********
+04/21/2024 07:37:23 PM: INFO: ****Launching Browser*********
+04/21/2024 07:37:23 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:37:23 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:37:23 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:37:23 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:37:31 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:37:31 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:37:31 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:37:31 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:37:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:36 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:36 PM: INFO: Launching application
+04/21/2024 07:37:36 PM: INFO: Launching application
+04/21/2024 07:37:36 PM: INFO: Launching application
+04/21/2024 07:37:36 PM: INFO: Launching application
+04/21/2024 07:37:40 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:40 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:40 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:40 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:40 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:40 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:40 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:40 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:41 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:37:41 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:37:41 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:37:41 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:37:53 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:53 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:53 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:53 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:37:53 PM: INFO: Launching application
+04/21/2024 07:37:53 PM: INFO: Launching application
+04/21/2024 07:37:53 PM: INFO: Launching application
+04/21/2024 07:37:53 PM: INFO: Launching application
+04/21/2024 07:37:54 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:54 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:54 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:54 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:37:54 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:54 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:54 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:54 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:37:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:37:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:37:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:37:55 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:38:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:38:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:38:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:38:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:38:46 PM: INFO: ****Login Test Started********
+04/21/2024 07:38:46 PM: INFO: ****Login Test Started********
+04/21/2024 07:38:46 PM: INFO: ****Login Test Started********
+04/21/2024 07:38:46 PM: INFO: ****Login Test Started********
+04/21/2024 07:38:46 PM: INFO: ****Launching Browser*********
+04/21/2024 07:38:46 PM: INFO: ****Launching Browser*********
+04/21/2024 07:38:46 PM: INFO: ****Launching Browser*********
+04/21/2024 07:38:46 PM: INFO: ****Launching Browser*********
+04/21/2024 07:38:46 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:38:46 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:38:46 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:38:46 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:38:53 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:38:53 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:38:53 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:38:53 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:39:01 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:01 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:01 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:01 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:01 PM: INFO: Launching application
+04/21/2024 07:39:01 PM: INFO: Launching application
+04/21/2024 07:39:01 PM: INFO: Launching application
+04/21/2024 07:39:01 PM: INFO: Launching application
+04/21/2024 07:39:06 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:06 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:06 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:06 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:06 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:06 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:06 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:06 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:08 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:08 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:08 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:08 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:19 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:19 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:19 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:19 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:39:19 PM: INFO: Launching application
+04/21/2024 07:39:19 PM: INFO: Launching application
+04/21/2024 07:39:19 PM: INFO: Launching application
+04/21/2024 07:39:19 PM: INFO: Launching application
+04/21/2024 07:39:24 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:24 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:24 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:24 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:39:24 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:24 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:24 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:24 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:39:25 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:25 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:25 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:25 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:39:37 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:39:37 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:39:37 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:39:37 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:40:34 PM: INFO: ****Login Test Started********
+04/21/2024 07:40:34 PM: INFO: ****Login Test Started********
+04/21/2024 07:40:34 PM: INFO: ****Login Test Started********
+04/21/2024 07:40:34 PM: INFO: ****Login Test Started********
+04/21/2024 07:40:34 PM: INFO: ****Launching Browser*********
+04/21/2024 07:40:34 PM: INFO: ****Launching Browser*********
+04/21/2024 07:40:34 PM: INFO: ****Launching Browser*********
+04/21/2024 07:40:34 PM: INFO: ****Launching Browser*********
+04/21/2024 07:40:34 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:40:34 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:40:34 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:40:34 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:40:38 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:40:38 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:40:38 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:40:38 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:40:44 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:44 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:44 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:44 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:44 PM: INFO: Launching application
+04/21/2024 07:40:44 PM: INFO: Launching application
+04/21/2024 07:40:44 PM: INFO: Launching application
+04/21/2024 07:40:44 PM: INFO: Launching application
+04/21/2024 07:40:49 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:40:49 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:40:49 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:40:49 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:40:49 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:40:49 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:40:49 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:40:49 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:40:50 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:40:50 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:40:50 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:40:50 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:40:57 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:57 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:57 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:57 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 07:40:57 PM: INFO: Launching application
+04/21/2024 07:40:57 PM: INFO: Launching application
+04/21/2024 07:40:57 PM: INFO: Launching application
+04/21/2024 07:40:57 PM: INFO: Launching application
+04/21/2024 07:41:07 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:41:07 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:41:07 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:41:07 PM: INFO: clicking on MyAccount--> register
+04/21/2024 07:41:07 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:41:07 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:41:07 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:41:07 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 07:41:09 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:41:09 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:41:09 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:41:09 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 07:41:09 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:41:09 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:41:09 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:41:09 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 07:41:10 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:41:10 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:41:10 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:41:10 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 07:41:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:41:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:41:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:41:17 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 07:41:54 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 07:41:54 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 07:41:54 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 07:41:54 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:26:18 PM: INFO: ****Login Test Started********
+04/21/2024 10:26:18 PM: INFO: ****Login Test Started********
+04/21/2024 10:26:18 PM: INFO: ****Login Test Started********
+04/21/2024 10:26:18 PM: INFO: ****Login Test Started********
+04/21/2024 10:26:18 PM: INFO: ****Launching Browser*********
+04/21/2024 10:26:18 PM: INFO: ****Launching Browser*********
+04/21/2024 10:26:18 PM: INFO: ****Launching Browser*********
+04/21/2024 10:26:18 PM: INFO: ****Launching Browser*********
+04/21/2024 10:26:18 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:18 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:18 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:18 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:21 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:26:21 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:26:21 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:26:21 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:26:30 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:30 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:30 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:30 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:30 PM: INFO: Launching application
+04/21/2024 10:26:30 PM: INFO: Launching application
+04/21/2024 10:26:30 PM: INFO: Launching application
+04/21/2024 10:26:30 PM: INFO: Launching application
+04/21/2024 10:26:45 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:45 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:45 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:45 PM: INFO: **** test_001_AccountRegistration started *** 
+04/21/2024 10:26:45 PM: INFO: Launching application
+04/21/2024 10:26:45 PM: INFO: Launching application
+04/21/2024 10:26:45 PM: INFO: Launching application
+04/21/2024 10:26:45 PM: INFO: Launching application
+04/21/2024 10:26:46 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:26:46 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:26:46 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:26:46 PM: INFO: clicking on MyAccount--> register
+04/21/2024 10:26:47 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:26:47 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:26:47 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:26:47 PM: INFO: -----Providing Costumer details for Registeration-----
+04/21/2024 10:26:54 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:26:54 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:26:54 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:26:54 PM: INFO: **** test_001_AccountRegistration finished *** 
+04/21/2024 10:26:55 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:55 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:55 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:55 PM: INFO: ---------test__002_Login Strarted---------
+04/21/2024 10:26:57 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:26:57 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:26:57 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:26:57 PM: INFO: ---------END OF test__002_Login Completed---------
+04/21/2024 10:27:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:27:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:27:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:27:06 PM: INFO: --------------Starting test_Login_DDT_Test----------
+04/21/2024 10:27:41 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:27:41 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:27:41 PM: INFO: ---------------End of test driven Testing-----------------------
+04/21/2024 10:27:41 PM: INFO: ---------------End of test driven Testing-----------------------
