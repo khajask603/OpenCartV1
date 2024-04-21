@@ -57,7 +57,6 @@ def setup(request):
     yield driver
     driver.quit()
 
-
 #----------------------------------------------------------------------------REPORTS------------------------------------------------------------
 # customizing reHTML Report---------------------------------------------
 @pytest.hookimpl()
@@ -66,7 +65,6 @@ def pytest_configure(config):
     config.stash[metadata_key]["Module Name"] = "Login Module"
     config.stash[metadata_key]["Tester Name"] = "Sk Khaja Mohiddin"
     config.option.htmlpath = os.path.abspath(os.curdir)+"\\reports\\"+datetime.now().strftime("%d-%m-%Y %H-%M-%S")+".html"
-
 #------------------Removing Unneseray from report---------
 
 # Optional hook for modifying pre-existing metadata (if needed)
